@@ -873,7 +873,7 @@
                     group = field.html.group;
                 }
                 html += '\n      <div class="w2ui-field '+ (field.html.span != null ? 'w2ui-span'+ field.html.span : '') +'" style="'+ field.html.style +'">'+
-                        '\n         <label>' + w2utils.lang(field.html.caption) +'</label>'+
+                        '\n         <label for="' + field.name + '">' + w2utils.lang(field.html.caption) +'</label>'+
                         '\n         <div>'+ input + w2utils.lang(field.html.text) + '</div>'+
                         '\n      </div>';
                 if (pages[field.html.page] == null) pages[field.html.page] = [];
